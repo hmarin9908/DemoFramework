@@ -1,14 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="6b85d8df-3f06-4a3a-80d1-2aa9b9527818" name="Changes" comment="" />
+    <list default="true" id="6b85d8df-3f06-4a3a-80d1-2aa9b9527818" name="Changes" comment="Se agregan al proyecto metodos para conectar el driver. Se agregan driversde chrome en carpeta resources. Se crea HomePage">
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/pages/RegisterPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/pages/SearchPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/test/CasosDePrueba.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pages/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/HomePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/utils/ClaseBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/utils/ClaseBase.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="2IxVwrBZh4syOv1zsE2QQIQjh3F" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -19,9 +41,59 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true"
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "C:/Users/humberto.marin/DemoFrameworkBootcamp/src/test/resources"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\humberto.marin\DemoFrameworkBootcamp\src\test\resources" />
+    </key>
+  </component>
+  <component name="RunManager" selected="TestNG.CasosDePrueba.CP003_Busqueda_De_Artista">
+    <configuration name="CasosDePrueba.CP001_Registro_Fallido_Captcha_En_Blanco" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="DemoFrameworkBootcamp" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="test" />
+      <option name="MAIN_CLASS_NAME" value="test.CasosDePrueba" />
+      <option name="METHOD_NAME" value="CP001_Registro_Fallido_Captcha_En_Blanco" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CasosDePrueba.CP003_Busqueda_De_Artista" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="DemoFrameworkBootcamp" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="test" />
+      <option name="MAIN_CLASS_NAME" value="test.CasosDePrueba" />
+      <option name="METHOD_NAME" value="CP003_Busqueda_De_Artista" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="TestNG.CasosDePrueba.CP003_Busqueda_De_Artista" />
+        <item itemvalue="TestNG.CasosDePrueba.CP001_Registro_Fallido_Captcha_En_Blanco" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -31,6 +103,45 @@
       <option name="presentableId" value="Default" />
       <updated>1671123467635</updated>
     </task>
+    <task id="LOCAL-00001" summary="Se sube a repo estructura base del proyecto">
+      <created>1671123740199</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1671123740200</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Se actualiza pom. Se agrega dependencia de selenium v 3.141.59">
+      <created>1671124163377</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1671124163377</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Se agregan al proyecto metodos para conectar el driver. Se agregan driversde chrome en carpeta resources. Se crea HomePage">
+      <created>1671155010670</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1671155010670</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Se sube a repo estructura base del proyecto" />
+    <MESSAGE value="Se actualiza pom. Se agrega dependencia de selenium v 3.141.59" />
+    <MESSAGE value="Se agregan al proyecto metodos para conectar el driver. Se agregan driversde chrome en carpeta resources. Se crea HomePage" />
+    <option name="LAST_COMMIT_MESSAGE" value="Se agregan al proyecto metodos para conectar el driver. Se agregan driversde chrome en carpeta resources. Se crea HomePage" />
   </component>
 </project>
