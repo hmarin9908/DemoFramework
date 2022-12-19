@@ -8,6 +8,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 //La clase base define las acciones de Selenium (Wrapper)
@@ -17,8 +18,16 @@ public class ClaseBase {
         protected JavascriptExecutor js;
         protected WebDriverWait wait;
 
+        protected Select select;
 
-        //Métodos
+    public WebDriver getDriver() {
+        return driver;
+    }
+
+    public void setDriver(WebDriver driver) {
+        this.driver = driver;
+    }
+//Métodos
 
     public ClaseBase(WebDriver driver) {
         this.driver = driver;
@@ -59,14 +68,14 @@ public class ClaseBase {
     public void ScrollElementoWeb (By localizador){
         js = (JavascriptExecutor) this.driver;
 
-        js.executeScript("arguments [0], scrollIntoView();", this.driver.findElement(localizador));
+        js.executeScript("arguments [0].scrollIntoView();", this.driver.findElement(localizador));
 
 
     }
     public void ScrollElementoWeb (WebElement elemento){
         js = (JavascriptExecutor) this.driver;
 
-        js.executeScript("arguments [0], scrollIntoView();",elemento);
+        js.executeScript("arguments [0].scrollIntoView();",elemento);
 
 
     }
@@ -92,11 +101,12 @@ public class ClaseBase {
     }
 
     //ObtenerTexto
-    public void obtenerTexto(WebElement elemento){
-        elemento.getText();
+    public String obtenerTexto(WebElement elemento){
+        return elemento.getText();
     }
-    public void obtenerTexto(By localizador){
-        this.driver.findElement(localizador).getText();
+    public String obtenerTexto(By localizador){
+        return this.driver.findElement(localizador).getText();
+
     }
 
 
@@ -121,5 +131,15 @@ public class ClaseBase {
     //Maximizar ventana
     public void maximizarBrowser(){
         driver.manage().window().maximize();
+    }
+
+    public void seleccionarDDLPorText(WebElement elemento,String texto){
+        select = new Select(elemento);
+
+        select.selectByVisibleText(texto);
+    }
+
+    public void cerrarBrowser(){
+        this.driver.quit();
     }
 }

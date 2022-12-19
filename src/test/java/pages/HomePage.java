@@ -11,10 +11,15 @@ public class HomePage extends ClaseBase {
     }
 
     //Las pages tienen por objetivo centralizar los localizadores y acciones de una pagina
-    By locatorBtnRegistrate = By.xpath("//button[contains(text(),\"Registrate\")]");
+    By locatorBtnRegistrate = By.xpath("//button[contains(text(),\"Regístrate\")]");
+    By locatorBtnBuscar = By.xpath(("//ul/li[2]/a"));
+
 
     //Acciones
     public void irARegistrarte(){
         click(esperarElementoWeb(locatorBtnRegistrate));
+    }
+    public void BtnBuscar(){
+        click(esperarElementoWeb(locatorBtnBuscar));
     }
 }
